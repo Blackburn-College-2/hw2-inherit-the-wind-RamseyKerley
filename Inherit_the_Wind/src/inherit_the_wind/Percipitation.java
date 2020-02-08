@@ -9,16 +9,18 @@ package inherit_the_wind;
  *
  * @author ramsey.kerley
  */
-public class Percipitation {
-    
-    
-    
-    
-    
-    
-      @Override
+public class Percipitation extends Measurement {
+
+    private double amount;
+
+    Percipitation(String s, double amount) {
+        super(amount, s);
+
+    }
+
+    @Override
     public String toString() {
-        return  "(s)";
+        return "It percipitated this much: " + super.toString();
 
     }
 }

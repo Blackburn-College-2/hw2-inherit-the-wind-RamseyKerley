@@ -18,6 +18,9 @@ public class Inherit_the_Wind {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Percipitation p = new Percipitation("cm(s)", 10);
+        System.out.println(p.toString());
+        
     }
     
 }

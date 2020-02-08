@@ -11,15 +11,20 @@ package inherit_the_wind;
  */
 public class Wind {
     
+    private double speed;
+    private String[] direction = new String[]{"North", "South"} ;
+    private String chosenDirection;
     
-    
-    
-    
+    public Wind(double speed, int d){
+        this.speed = speed;
+        this.chosenDirection = direction[d];
+    }
     
     
       @Override
     public String toString() {
-        return "(s)";
+        Measurement wind = new Measurement(speed, "km(s)"); 
+        return "Wind: " + wind.toString();
 
     }
 }

@@ -9,21 +9,18 @@ package inherit_the_wind;
  *
  * @author ramsey.kerley
  */
-public class Measurement {
+public class Snow extends Percipitation {
     
-   private double value;
-   private String unit;
-
-    public Measurement(double i, String s) {
-        value = i;
-        unit = s;
-
-    }
-
-    @Override
+   public Snow( double amount,String s){
+       super(s, amount*10);
+   }
+    
+    
+     @Override
     public String toString() {
-        return Math.floor(value) + " " + unit ;
+        return "It snowed this much: " + super.toString();
 
     }
-
+    
+    
 }

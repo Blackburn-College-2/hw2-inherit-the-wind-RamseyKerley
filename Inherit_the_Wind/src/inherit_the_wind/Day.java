@@ -19,6 +19,26 @@ public class Day {
     
     
     
+    
+    
+    /**
+     * this gets the temp 
+     * @return the temp value 
+     */
+    public double getTemp(){
+        return this.temp;
+    }
+    /**
+     * this is use to set the temp to a different temp 
+     * @param t
+     * @return the new temperature
+     */
+    public double setTemp(int t){
+        this.temp = t;
+        return this.temp;
+    }
+    
+    
       @Override
     public String toString() {
         return "(s)";
