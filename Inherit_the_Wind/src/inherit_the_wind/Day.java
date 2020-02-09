@@ -12,35 +12,33 @@ import java.util.Random;
  * @author ramsey.kerley
  */
 public class Day {
-    
-    public Random rand =  new Random();
+
+    public Random rand = new Random();
     private double temp = rand.nextInt(35) + 1;
-    
-    
-    
-    
-    
-    
+    private Clouds cloud = new Clouds(rand.nextInt(4));
     /**
-     * this gets the temp 
-     * @return the temp value 
+     * this gets the temp
+     *
+     * @return the temp value
      */
-    public double getTemp(){
+    public double getTemp() {
         return this.temp;
     }
+
     /**
-     * this is use to set the temp to a different temp 
+     * this is use to set the temp to a different temp
+     *
      * @param t
      * @return the new temperature
      */
-    public double setTemp(int t){
+    public double setTemp(int t) {
         this.temp = t;
         return this.temp;
     }
-    
-    
-      @Override
+
+    @Override
     public String toString() {
+
         return "(s)";
 
     }

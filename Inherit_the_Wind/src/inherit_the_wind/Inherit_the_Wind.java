@@ -5,6 +5,8 @@
  */
 package inherit_the_wind;
 
+import java.util.Random;
+
 /**
  *
  * @author ramsey.kerley
@@ -13,14 +15,15 @@ public class Inherit_the_Wind {
 
     /**
      * 12 hours is the estimate
-     * 
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Percipitation p = new Percipitation("cm(s)", 10);
-        System.out.println(p.toString());
-        
+        //Percipitation p = new Percipitation("cm(s)", 10);
+        Random rand = new Random();
+       // System.out.println(rand.nextInt(4));
+
     }
-    
+
 }

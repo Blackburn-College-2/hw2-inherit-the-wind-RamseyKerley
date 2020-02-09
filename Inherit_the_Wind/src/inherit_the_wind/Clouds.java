@@ -11,16 +11,19 @@ package inherit_the_wind;
  */
 public class Clouds {
 
-    private int[] cloudLevel = new int[3];
+    private String[] cloudLevel = new String[]{"none","Light", "Medium", "Heavy"};
+    private String cLevel;
     
-    
-    
+    public Clouds(int c){
+        cLevel = cloudLevel[c];
+    }
     
     
     
     @Override
     public String toString() {
-        return "(s)";
+        
+        return "Clouds: " + cLevel;
 
     }
 }

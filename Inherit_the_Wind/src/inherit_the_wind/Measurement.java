@@ -10,9 +10,9 @@ package inherit_the_wind;
  * @author ramsey.kerley
  */
 public class Measurement {
-    
-   private double value;
-   private String unit;
+
+    private double value;
+    private String unit;
 
     public Measurement(double i, String s) {
         value = i;
@@ -22,7 +22,7 @@ public class Measurement {
 
     @Override
     public String toString() {
-        return Math.floor(value) + " " + unit ;
+        return Math.floor(value) + " " + unit;
 
     }
 

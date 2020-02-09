@@ -23,7 +23,7 @@ public class Wind {
     
       @Override
     public String toString() {
-        Measurement wind = new Measurement(speed, "km(s)"); 
+          Measurement wind = new Measurement(speed, "km(s)");
         return "Wind: " + wind.toString();
 
     }

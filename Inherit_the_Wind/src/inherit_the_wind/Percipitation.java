@@ -11,8 +11,6 @@ package inherit_the_wind;
  */
 public class Percipitation extends Measurement {
 
-    private double amount;
-
     Percipitation(String s, double amount) {
         super(amount, s);
 
