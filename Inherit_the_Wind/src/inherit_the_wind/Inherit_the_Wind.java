@@ -21,9 +21,14 @@ public class Inherit_the_Wind {
     public static void main(String[] args) {
         // TODO code application logic here
         //Percipitation p = new Percipitation("cm(s)", 10);
-        Random rand = new Random();
-       // System.out.println(rand.nextInt(4));
-
+        //Random rand = new Random();
+        //System.out.println(rand.nextInt(2));
+        System.out.println("Welcome to Weather-Tron. Here's your report: ");
+        for(int i = 1 ; i <= 10; i++){
+            System.out.println("Day " + i + " :");
+            Day day = new Day(); 
+        }
+       
     }
 
 }

@@ -18,7 +18,7 @@ public class Percipitation extends Measurement {
 
     @Override
     public String toString() {
-        return "It percipitated this much: " + super.toString();
+        return "Percipitation: " + super.toString();
 
     }
 }

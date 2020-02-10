@@ -13,7 +13,7 @@ public class Wind {
     
     private double speed;
     private String[] direction = new String[]{"North", "South"} ;
-    private String chosenDirection;
+    public String chosenDirection;
     
     public Wind(double speed, int d){
         this.speed = speed;
@@ -24,7 +24,7 @@ public class Wind {
       @Override
     public String toString() {
           Measurement wind = new Measurement(speed, "km(s)");
-        return "Wind: " + wind.toString();
+        return "Wind: " + wind.toString() + chosenDirection;
 
     }
 }

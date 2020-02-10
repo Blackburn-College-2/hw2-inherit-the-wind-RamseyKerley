@@ -14,8 +14,37 @@ import java.util.Random;
 public class Day {
 
     public Random rand = new Random();
-    private double temp = rand.nextInt(35) + 1;
+    private double temp = rand.nextInt(35);
     private Clouds cloud = new Clouds(rand.nextInt(4));
+    private Percipitation rain = new Percipitation("cm", rand.nextInt(10));
+    private Snow snow = new Snow(rand.nextInt(10), "cm");
+    private Wind wind = new Wind(rand.nextInt(15), rand.nextInt(2));
+
+    public Day() {
+        System.out.println("Morning temp: " + temp + " C");
+        System.out.println(cloud.toString());
+        if (cloud.cLevel.equals("none")) {
+            this.temp = temp + 6;
+        } else if (cloud.cLevel.equals("Light")) {
+            this.temp = temp + 3;
+        } else if (cloud.cLevel.equals("Medium")) {
+            this.temp = temp - 3;
+        } else {
+            this.temp = temp - 14;
+        }
+        
+        
+        System.out.println("Midday temp: " + temp + " C");
+        
+        if (temp >= 0) {
+          System.out.println(rain.toString() + " in rain");
+        } else {
+           System.out.println(snow.toString());
+        }
+        System.out.println(wind.toString());
+
+    }
+
     /**
      * this gets the temp
      *
@@ -38,8 +67,8 @@ public class Day {
 
     @Override
     public String toString() {
-
-        return "(s)";
+        Measurement day = new Measurement(temp, " C");
+        return day.toString();
 
     }
 }

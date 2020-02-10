@@ -17,7 +17,7 @@ public class Snow extends Percipitation {
 
     @Override
     public String toString() {
-        return "It snowed this much: " + super.toString();
+        return super.toString() + " in snow";
 
     }
 

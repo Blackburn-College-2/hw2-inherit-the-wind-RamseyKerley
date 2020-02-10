@@ -12,7 +12,7 @@ package inherit_the_wind;
 public class Clouds {
 
     private String[] cloudLevel = new String[]{"none","Light", "Medium", "Heavy"};
-    private String cLevel;
+    public String cLevel;
     
     public Clouds(int c){
         cLevel = cloudLevel[c];
